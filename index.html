@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #button1 {
+            width: 60%;
+            padding: 20px;
+            margin: 40px;
+            border: hidden;
+            background-color: white;
+            font-size: 2rem;
+            font-weight: 400;
+            letter-spacing: 4px;
+            border-radius: 45px;
+            transition: all 0.4s;
+        }
+
+        #button1:hover {
+            transform: scale(1.07);
+            background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+            box-shadow: 10px 10px 40px rgb(43, 145, 182);
+            color: white;
+        }
+
+        .buttons{
+            position: relative;
+            height: 50px;
+            width: 200px;
+            margin: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #hover-div{
+            animation: move 1.5s ease-in;
+        }
+
+        @keyframes move {
+            from{
+                left: 0px;
+                background-color: grey;
+            }
+            to{
+                left: 200px;
+            }
+        }
+
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button id="button1"> BUTTON </button>
+        <button class="buttons" id="button2">$hover-div
+            <div id="hover-div"></div>
+        </button>
+        <button class="buttons" id="button2"> BUTTON </button>
+        
+    </div>
+</body>
+
+</html>
